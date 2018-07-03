@@ -1,4 +1,4 @@
-[Link](AuroraTyler.github.io/designpattern1)
+<!--[Design Pattern 2](AuroraTyler.github.io/designpattern2)-->
 
 <!-- ## Welcome to GitHub Pages
 
