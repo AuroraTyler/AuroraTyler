@@ -62,7 +62,7 @@ p {
     margin: 10px;
 }
 
-li{
+ul, ol, li {
     color: #33FF00;
     margin: 10px;
 }
