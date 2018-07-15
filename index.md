@@ -1,5 +1,5 @@
 [Design Pattern 1](AuroraTyler.github.io/designpattern1summary)
-<!--[Design Pattern 2](AuroraTyler.github.io/designpattern2)-->
+[Design Pattern 2](AuroraTyler.github.io/designpattern2)
 
 <!-- ## Welcome to GitHub Pages
 
