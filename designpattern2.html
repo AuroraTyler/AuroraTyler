@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design Pattern: Prominent "Done" Button</title>
+    <link rel="stylesheet" href="designpattern2styles.css">
+    <script type="text/javascript" src="designpattern2script.js"></script>
+</head>
+<body>
+<h1>Design Pattern 2: Prominent "Done" Button</h1>
+    <form>
+        <p>What do you want to know?</p>
+        <input type="checkbox" id="question1" value="What">What is the "Done" button?<br>
+        <input type="checkbox" id="question2" value="When">When do you use the "Done" button?<br>
+        <input type="checkbox" id="question3" value="Why">Why use the "Done" button?<br>
+        <input type="checkbox" id="question4" value="How">How to use the "Done" button?<br>
+        <button type="button" onclick="buttonFunction()">Show Answers</button>
+    </form>
+<div id="answers">
+    <h2>Answers</h2>
+    <h3>What:</h3>
+        <p id="whatanswer">The final button that a user clicks in the process of completing their task is big, is at the end of the visual flow and is clearly labeled.</p>
+    <h3>When:</h3>
+        <p id="whenanswer">Any button that saves work, submits information, or otherwise completes some set of actions by the user should be prominent.</p>
+    <h3>Why:</h3>
+        <p id="whyanswer">By making the last step stand out, the user isn’t left wondering or confused if the process is over. They know that their work is saved, the information is submitted, etc.</p>
+    <h3>How:</h3>
+        <p id="howanswer">Placement, appearance and labeling are the keys to a well-done button. The button should appear at the logical conclusion of the set of actions that it is finishing, such as the end of the page or the button of the form. It should look like a button with colors that contrast from the background and has well defined edges. The button should always be labeled, and the more specific the better. Don’t use an icon because that can be ambiguous. Use text that sums up the action that the button does, “Submit”, “Save”, etc.</p>
+</div>
+</body>
+</html>
