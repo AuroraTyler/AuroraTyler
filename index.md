@@ -1,6 +1,7 @@
 - [Design Pattern 1](AuroraTyler.github.io/designpattern1summary)
 - [Design Pattern 2](AuroraTyler.github.io/designpattern2)
 - [Design Pattern 3](AuroraTyler.github.io/designpattern3)
+- [Design Pattern 4](AuroraTyler.github.io/sameErrorPage)
 
 <!-- ## Welcome to GitHub Pages
 
