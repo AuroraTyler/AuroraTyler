@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design Pattern 4: Same Page Errors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="samePageStyles.css">
+</head>
+<body ng-app="">
+<div id="summary">
+    <h1>Same Page Errors</h1>
+    <h2>What:</h2>
+    <p>Placing error messages for a form on the same page as the form’s input area.</p>
+    <h2>When:</h2>
+    <p>Use so that when a user enters information that isn’t valid or acceptable, they know right away and can fix it before it becomes a problem. It can also help a user understand what is needed if they are unsure what to enter.</p>
+    <h2>Why:</h2>
+    <p>Old error messages showed up in popup dialog boxes, that had to be closed before a user could adjust their input, meaning that they wouldn’t be able to read the message anymore. Other error messages would show up on a separate page, so the message was still limited to 1 reading. Having the message next to the input now means that the user can see more easily where the problem is.</p>
+    <h2>How:</h2>
+    <p>Design the form so that certain types of errors aren’t possible. For example, using dropdowns instead of text fields. Mark all required fields, but don’t make too many fields necessary. When errors happen place messages at the top of the form with graphics and bold or red text. Also, mark the fields where the errors occurred.</p>
+</div>
+<div id="tryIt">
+    <h1>Try it in the form below:</h1>
+    <form name="myForm">
+        <h3 ng-show="myForm.myName.$touched && myForm.myName.$invalid || myForm.myEmail.$invalid">This form contains an error!</h3>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="myName" ng-model="nameInput" required>
+        <span ng-show="myForm.myName.$touched && myForm.myName.$invalid"><strong>The name is required.</strong></span><br/>
+        <label for="email">Email:</label>
+        <input id="email" name="myEmail" ng-model="emailInput" type="email">
+        <span ng-show="myForm.myEmail.$invalid"><strong>Enter a valid email.</strong></span>
+        <p>If you click on the name field, but do not enter anything, you get an error</p>
+        <p>If you enter text into the email field that doesn't follow the correct format, you get an error. The correct format is: me@example.com</p>
+    </form>
+</div>
+</body>
+</html>

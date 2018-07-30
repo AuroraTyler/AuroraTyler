@@ -1,0 +1,55 @@
+body {
+    background-color: #006633;
+}
+
+form {
+    border: 2px solid white;
+    background-color: #FFCC00;
+    padding: 20px;
+    width: 45%;
+    float: right;
+    margin-left: 15px;
+    margin-top: 60px;
+}
+
+#summary {
+    float: left;
+    width: 45%;
+}
+
+input {
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    font-family: Serif;
+    color: white;
+    margin: 10px 0px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 24px;
+    color: red;
+}
+
+p {
+    color: white;
+}
+
+#tryIt p {
+    color: black;
+}
+
+span {
+    color: red;
+}
