@@ -2,6 +2,7 @@
 - [Design Pattern 2](AuroraTyler.github.io/designpattern2)
 - [Design Pattern 3](AuroraTyler.github.io/designpattern3)
 - [Design Pattern 4](AuroraTyler.github.io/samePageErrors)
+- [Special Topics 2](AuroraTyler.github.io/homeworkList)
 
 <!-- ## Welcome to GitHub Pages
 
