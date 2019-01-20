@@ -1,5 +1,5 @@
 # COMM 261 Work (Spring 2019)
-- [Box Model and CSS Selectors](AuroraTyler.github.io/cssexercise)
+- [Box Model and CSS Selectors](AuroraTyler.github.io/cssexercise/index.html)
 
 
 # COMM 363 Work (Summer 2018)
