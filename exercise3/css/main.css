@@ -1,0 +1,190 @@
+/* Header formatting*/
+h1 {
+  font-family: "Palatino Linotype", "Times New Roman", serif;
+  color: hsla(57, 100%, 56%, .9);
+  font-size: calc(36px + 0.5vw);
+}
+
+header {
+    background-color: rgba(0,102,0,1);
+   /* text-align: center; */
+    padding: 10px;
+}
+
+header img {
+    margin: 2px;
+}
+
+/*Navigation bar formatting*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li:first-child {
+    background-color: rgba(0,102,0,0.7);
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, a:focus{
+    background-color: hsla(57, 100%, 56%, 0.9);
+    color: black;
+}
+
+/*Footer formatting*/
+
+footer {
+    background-color: rgba(0,102,0,1);
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    width: 95vw;
+    flex-shrink: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+}
+
+/*Additional formatting*/
+h2::first-letter {
+    /*float: left;*/
+    font-size: 2em;
+    font-weight: bold;
+    font-family: monospace;
+    padding-right: 2px;
+}
+
+body {
+    font-size: calc(12px + 0.5vw);
+    line-height: calc(1.1em + 0.5vw);
+    margin: .5em;
+}
+
+h2 {
+    font-size: calc(18px + 1.5vw);
+    font-family: sans-serif;
+}
+
+h2 ~ ul {
+    list-style-type: square;
+}
+
+p:only-child {
+    color: hsla(57, 100%, 56%, 0.9);
+}
+
+h3:only-of-type {
+    color: hsla(57, 100%, 56%, 0.9);
+    font-style: oblique;
+}
+
+.img {
+    margin: 2vh 2vw;
+    border: 2px solid black;
+}
+
+article {
+    background-color: hsla(57, 100%, 56%, 0.6);
+}
+
+section {
+    background-color: rgba(255,255,255, .5);
+    padding: 5px;
+}
+
+.leftcolumn, .rightcolumn {
+    float: left;
+    width: 50%;
+}
+
+/*Week 3 Additional Formatting*/
+/*Full Page Background Image*/
+.breakfast{
+    background: url(../assets/breakfast-lg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Full Width Image*/
+.lunch {
+    overflow-x: hidden;
+}
+
+#lunch {
+    max-width: 100%;
+}
+
+.lunchmain {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+figure {
+    margin: 15px 0;
+}
+figcaption {
+    text-align: center;
+    color: #999;
+}
+
+/*Full Page Background Video*/
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.viewport-header {
+    position: relative;
+    height: 25vh;
+    display: flex;
+}
+
+#main {
+    overflow: auto;
+    background: rgba(0,0,0, 0.66);
+    color: white;
+    position: relative;
+    padding: 1rem;
+}
+
+#videofooter {
+    position: relative;
+}
