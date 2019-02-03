@@ -12,13 +12,16 @@ th {
     padding: 10px;
 }
 
+tbody tr {
+    background-color: white;
+}
+
 tbody tr:hover, tbody tr:focus {
     background-color: lightgrey;
 }
 
 td {
     padding: 5px;
-    background-color: white;
 }
 
 table {
