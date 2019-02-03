@@ -18,6 +18,7 @@ tbody tr:hover, tbody tr:focus {
 
 td {
     padding: 5px;
+    background-color: white;
 }
 
 table {
