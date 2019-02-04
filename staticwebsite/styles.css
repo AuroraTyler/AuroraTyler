@@ -35,6 +35,7 @@ main, nav, aside, header, footer, article {
 }
 
 html {
+    background-color: #d2b48c;
     background: url(img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -48,6 +49,8 @@ body {
     display: flex;
     flex-direction: column;
     line-height: calc(1.1em + 0.5vw);
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 /*Navigation*/
@@ -73,14 +76,23 @@ nav a {
     color: white;
 }
 
-#currentPage {
-    background-color: rgba(255, 203, 53, 1);
-    color: black;
+nav a:visited {
+    text-decoration: underline;
 }
 
 nav a:hover {
-    background: rgba(255, 203, 53, .75);
+    background: rgba(255, 203, 53, .5);
     color: #000;
+}
+
+nav a:focus {
+    background: rgba(255, 203, 53, .75);
+    color: white;
+}
+
+nav a:active, #currentPage {
+    background-color: rgba(255, 203, 53, 1);
+    color: black;
 }
 
 @media all and (max-width: 800px) {
@@ -206,12 +218,26 @@ aside li a {
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
-    background-color: hsla(210, 60%, 24%, .25);;
+    background-color: hsla(210, 60%, 24%, .25);
 }
 
-/* Change the link color on hover */
+aside li a:visited {
+    background-color: hsla(210, 60%, 24%, .5);
+    color: white;
+}
+
 aside li a:hover {
-    background-color: hsla(210, 60%, 24%, 1);;
+    background-color: hsla(210, 60%, 24%, 1);
+    color: white;
+}
+
+aside li a:focus {
+    background-color: rgba(255, 203, 53, .5);
+    color: white;
+}
+
+aside li a:active {
+    background-color: rgba(255, 203, 53, 1);
     color: white;
 }
 
@@ -251,4 +277,43 @@ h3 {
 
 h4 {
     font-size: calc(24px + 0.5vw);
+}
+
+/* Additional Formatting */
+video {
+    max-width: 800px;
+    min-width: 600px;
+}
+
+#miodrendMap {
+    width: 100%;
+    max-width: 400px;
+}
+
+section img {
+    max-width: 100%;
+}
+
+section {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+section p, section figure {
+    margin: 15px 0;
+}
+
+figcaption {
+    text-align: center;
+    color: #420039;
 }
