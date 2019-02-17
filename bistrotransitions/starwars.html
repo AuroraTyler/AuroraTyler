@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        /* Learn how to create this and much more with this email course:
+
+https://cssanimation.rocks/courses/animation-101/
+
+MANY THANKS TO @tadywankenobi for the following JS to handle the text in the byline:
+
+The following JS takes in the byline and splits it into letters, each one wrapped in a span. We need to create the spans as nodes, we can't just add them to the HTML using innerHTML, as to do so would mean the CSS won't affect the span because it doesn't recognise the tag as existing. It's an old problem we run into time and again.
+
+*/
+
+        let byline = document.getElementById('byline');     // Find the H2
+        bylineText = byline.innerHTML;                                      // Get the content of the H2
+        bylineArr = bylineText.split('');                                   // Split content into array
+        byline.innerHTML = '';                                                      // Empty current content
+
+        let span;                   // Create variables to create elements
+        let letter;
+
+        for(i=0;i<bylineArr.length;i++){                                    // Loop for every letter
+            span = document.createElement("span");                    // Create a <span> element
+            letter = document.createTextNode(bylineArr[i]);   // Create the letter
+            if(bylineArr[i] == ' ') {                                             // If the letter is a space...
+                byline.appendChild(letter);                 // ...Add the space without a span
+            } else {
+                span.appendChild(letter);                       // Add the letter to the span
+                byline.appendChild(span);                   // Add the span to the h2
+            }
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/starwarsstyles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i" rel="stylesheet">
+    <title>Star Wars</title>
+</head>
+<body class="swbody">
+    <div class="starwars-demo">
+        <img src="img/star.svg" alt="Star" class="star">
+        <img src="img/wars.svg" alt="Wars" class="wars">
+        <h2 class="byline" id="byline"><span>N</span><span>a</span><span>n</span><span>c</span><span>y</span> <span>D</span><span>r</span><span>e</span><span>w</span></h2>
+    </div>
+</body>
+</html>

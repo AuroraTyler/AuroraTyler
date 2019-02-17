@@ -1,0 +1,382 @@
+/* Header formatting*/
+h1 {
+  font-family: "Palatino Linotype", "Times New Roman", serif;
+  color: hsla(57, 100%, 56%, .9);
+  font-size: calc(36px + 0.5vw);
+  float: right;
+}
+
+header {
+    background-color: rgba(0,102,0,1);
+   /* text-align: center; */
+    padding: 10px;
+}
+
+header img {
+    margin: 2px;
+    float: left;
+}
+
+header p{
+    clear: both;
+    width: 5em;
+}
+
+/*Navigation bar formatting*/
+/*nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li:first-child {
+    background-color: rgba(0,102,0,0.7);
+}
+
+nav {
+    float: left;
+    background-color: #333;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+    background-color: #333;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+nav li a:hover, a:focus{
+    background-color: hsla(57, 100%, 56%, 0.9);
+    color: black;
+}*/
+
+/*Footer formatting*/
+
+footer {
+    background-color: rgba(0,102,0,1);
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    width: 95vw;
+    flex-shrink: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+}
+
+/*Additional formatting*/
+h2::first-letter {
+    /*float: left;*/
+    font-size: 2em;
+    font-weight: bold;
+    font-family: monospace;
+    padding-right: 2px;
+}
+
+body {
+    font-size: calc(12px + 0.5vw);
+    line-height: calc(1.1em + 0.5vw);
+    margin: .5em;
+}
+
+h2 {
+    font-size: calc(18px + 1.5vw);
+    font-family: sans-serif;
+}
+
+h2 ~ ul {
+    list-style-type: square;
+}
+
+p:only-child {
+    color: hsla(57, 100%, 56%, 0.9);
+}
+
+h3:only-of-type {
+    color: hsla(57, 100%, 56%, 0.9);
+    font-style: oblique;
+}
+
+.img {
+    margin: 2vh 2vw;
+    border: 2px solid black;
+}
+
+article {
+    background-color: hsla(57, 100%, 56%, 0.6);
+}
+
+section {
+    background-color: rgba(255,255,255, .5);
+    padding: 5px;
+}
+
+.clear {
+    clear: both;
+    padding: 5px;
+}
+
+.leftcolumn, .rightcolumn {
+    float: left;
+    width: 50%;
+}
+
+/*Week 3 Additional Formatting*/
+/*Full Page Background Image*/
+.breakfast{
+    background: url(../assets/breakfast-lg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Full Width Image*/
+.lunch {
+    overflow-x: hidden;
+}
+
+#lunch {
+    max-width: 100%;
+}
+
+.lunchmain {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+figure {
+    margin: 15px 0;
+}
+figcaption {
+    text-align: center;
+    color: #999;
+}
+
+/*Full Page Background Video*/
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.viewport-header {
+    position: relative;
+    height: 40vh;
+    display: flex;
+}
+
+#main {
+    overflow: auto;
+    background: rgba(0,0,0, 0.66);
+    color: white;
+    position: relative;
+    padding: 1rem;
+}
+
+#videofooter {
+    position: relative;
+}
+
+/*Drop down formatting*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav,
+.drop-nav {
+    background: #333;
+    z-index: 10;
+}
+
+.main-nav {
+    float: left;
+    width: 100%;
+    /*border: solid 1px black;
+    border-top: none;*/
+}
+
+.main-nav > li {
+    float: left;
+    border-right: solid 1px black;
+}
+
+#exlink {
+    background-color: rgba(0,102,0,0.7);
+}
+
+nav li a:hover, a:focus {
+    background-color: hsla(57, 100%, 56%, 0.9);
+    color: black;
+}
+
+.main-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.dropdown,
+.flyout {
+    position: relative;
+}
+
+.dropdown:after {
+    content: "\25BC";
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
+
+.drop-nav,
+.flyout-nav {
+    position: absolute;
+    display: none;
+}
+
+.drop-nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+    display: block;
+}
+
+.flyout-nav {
+    left: 100%;
+    top: 0;
+}
+
+.flyout:hover a,
+.flyout-nav {
+    background-color: hsla(57, 100%, 56%, 0.9);
+    color: black;
+}
+
+.flyout-nav a:hover{
+    background-color: #333333;
+    color: white;
+}
+
+/*Transitions and Animations*/
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate-pop-in {
+    animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    -webkit-animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
+}
+
+.header-img {
+    animation-delay: .6s;
+}
+
+.header-title {
+    animation-delay: .8s;
+}
+
+.header-button {
+    animation-delay: .9s;
+}
+
+@keyframes rotate-up {
+    100% {
+        transform: rotateZ(-4deg);
+    }
+}
+
+.header-index:after {
+    animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+    background: #F9FCFF;
+    content: "";
+    height: 40rem;
+    left: -5%;
+    position: absolute;
+    right: -5%;
+    top: 90%;
+    transform-origin: 0 0;
+    z-index: 0;
+}
+
+/*Button Animations*/
+
+.button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    background: hsla(57, 100%, 56%, 1);
+    color: black;
+    font-size: 24px;
+    border-radius: 0.5em;
+    padding: 0 1em;
+    position: relative;
+    overflow: hidden;
+    line-height: 32px;
+}
+
+.button:hover::after, .button:focus::after {
+    animation: sheen 1s forwards;
+}
+
+@keyframes sheen {
+    100% {
+        transform: rotateZ(60deg) translate(1em, -9em);
+    }
+}
