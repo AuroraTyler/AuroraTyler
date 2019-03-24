@@ -1,0 +1,119 @@
+/* Color Palette*/
+/*
+HSL
+Sunglow: hsla(45, 100%, 60%, 1);
+Tyrian Purple: hsla(308, 100%, 13%, 1);
+Dark Imperial Blue: hsla(210, 60%, 24%, 1);
+Dark Spring Green: hsla(147, 67%, 26%, 1);
+Vivid Burgundy: hsla(351, 70%, 38%, 1);
+
+RGB
+Sunglow: rgba(255, 203, 53, 1);
+Tyrian Purple: rgba(66, 0, 57, 1);
+Dark Imperial Blue: rgba(24, 61, 97, 1);
+Dark Spring Green: rgba(22, 110, 61, 1);
+Vivid Burgundy: rgba(167, 29, 49, 1);
+
+Hex
+Sunglow: #ffcb35
+Tyrian Purple: #420039
+Dark Imperial Blue: #183d61
+Dark Spring Green: #166e3d
+Vivid Burgundy: #a71d31
+*/
+
+html {
+    background-color: #d2b48c;
+    background: url(img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    background-color: #d2b48c;
+    background: url(img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+main, section {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 20px;
+}
+
+section img {
+    max-width: 100%;
+}
+
+section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+section p, section figure {
+    margin: 15px 0;
+}
+
+figcaption {
+    text-align: center;
+    color: #420039;
+}
+
+nav {
+    background: hsla(351, 70%, 38%, 1);
+}
+
+nav a {
+    color: white;
+}
+
+nav li:hover, nav li:focus {
+    background: rgba(255, 203, 53, .75);
+    color: #000;
+}
+
+header {
+    background-color: hsla(308, 100%, 13%, .95);
+    background-image: url("img/headerbg.png");
+}
+
+/* FOOTER */
+footer {
+    flex-shrink: 0;
+    background-color: #420039;
+    text-align: center;
+    height: 10vh;
+    border-top: 5px solid #a71d31;
+    margin-top: 5px;
+}
+
+footer small {
+    color: white;
+}
+
+p {
+    font-family: "Raleway","Lato", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Eagle Lake", serif;
+    margin: 5px;
+}
+
