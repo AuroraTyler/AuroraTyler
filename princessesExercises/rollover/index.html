@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <title>Princesses - before and after</title>
+      <link href="styles.css" rel="stylesheet">
+       <link href="main.css" rel="stylesheet">
+      <script>
+        src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+      </script>
+       <script type="text/javascript" src="rollover_library.js"></script>
+       <script type="text/javascript" >
+           var $ = function (id) { return document.getElementById(id); }
+           var rollover;
+           window.onload = function () {
+               <!-- One statement for each rollover -->
+               rollover1 = new Rollover("image1", "images/xbelle.jpg")
+               rollover2 = new Rollover("image2", "images/xjasmine.jpg")
+               rollover3 = new Rollover("image3", "images/xlittlemermaid.jpg")
+               rollover1 = new Rollover("image4", "images/xcinderella.jpg")
+               rollover1 = new Rollover("image5", "images/xsnowwhite.jpg")
+           }
+       </script>
+   </head>
+
+   <body>
+ 
+
+      <section>
+       <h1>Princesses</h1>
+       <h2>Before and After</h2>
+       <p>
+        <img src="images/pr_belle.jpg" alt="Belle - Before" id="image1">
+       <img src="images/pr_jasmine.jpg" alt="Jasmine - Before" id="image2">
+        <img src="images/pr_littlemer.jpg" alt="Little Mermaid - Before" id="image3">
+        <br>
+        <img src="images/pr_cinder.jpg" alt="Cinderella - Before" id="image4">
+        <img src="images/pr_snow.jpg" alt="Snow White - Before" id="image5">
+       </p>
+      </section>
+
+      <footer>
+      </footer>
+  </body>
+</html>
