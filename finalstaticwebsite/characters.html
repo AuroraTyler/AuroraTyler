@@ -24,6 +24,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- JQuery Links -->
+        <script src="js/slide_show_library.js"></script>
+        <script type="text/javascript" src="js/slide_show.js"></script>
     <!-- Custom Stylesheet -->
         <link rel="stylesheet" href="css/custom.css">
     <!-- Fonts -->
@@ -33,7 +36,7 @@
 </head>
 <body>
     <!-- Collapsible Nav Bar -->
-        <nav class="navbar navbar-expand-sm fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <!-- Toggler/Collapsible Button-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon btn-dark"></span></button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -66,7 +69,7 @@
                         <a class="dropdown-item" href="miodrend_religions.html#tallus">Tallus</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="characters.html">People</a>
                     <!-- Dropdown -->
                     <div class="dropdown-menu">
@@ -81,59 +84,64 @@
                         <a class="dropdown-item" href="characters.html#thaddeus">Thaddeus Grimsbane</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="authors.html">About Us</a>
-                </li>
             </ul>
         </div>
     </nav>
     <!-- Header Image / Website Title / Logo -->
         <header class="jumbotron jumbotron-fluid text-center" id="top">
-        <div class="container">
             <h1>Miodrend Historia</h1>
             <p>All you need to know about Miodrend</p>
-        </div>
-    </header>
+        </header>
     <!-- Website Content -->
         <div class="container">
         <main>
             <!-- Main description. Single Column -->
             <div class="row">
-                <div class="col-md">
+                <div class="col">
                     <h2>The People of Miodrend</h2>
                     <p>There are many people in the lands of Miodrend, the following is a short bio for the main characters in the What the Fudge Chronicles.</p>
                 </div>
             </div>
-            <!-- 3 Column. 1 Column option on smaller devices -->
+            <!-- 3 Column. 2 column option on medium devices. 1 Column option on small devices -->
             <div class="row">
-                <!-- Column 1 -->
-                <div class="col-md">
-                    <h2>Outsiders</h2>
-                    <p>The following people are not from Miodrend originally.</p>
+                <!-- Column 1: Pictures in JQuery Slideshow-->
+                <section class="col-lg-3 col-md-5 col-sm-12">
+                    <h2>Photo Album</h2>
+                    <ul id="image_list">
+                        <li><a href="img/avanormal.png" title="Ava de Luca"></a></li>
+                        <li><a href="img/avacontra.jpg" title="Ava in Contra"></a></li>
+                        <li><a href="img/avaface.png" title="Portrait of Ava"></a></li>
+                        <li><a href="img/marinanormal.png" title="Marina Hayes"></a></li>
+                        <li><a href="img/marinacontra.png" title="Marina in Contra"></a></li>
+                        <li><a href="img/marinaface.png" title="Portrait of Marina"></a></li>
+                    </ul>
+                    <p id="controls">
+                        <button id="btn_previous" disabled="disabled">
+                            <img src="img/prev.gif" alt="Previous Image">
+                        </button>
+                        <button id="btn_play">
+                            <img src="img/pause.gif" alt="Play or Pause" id="img_play_pause">
+                        </button>
+                        <input type="button" id="btn_speed" value="Slow">
+                        <button id="btn_next" disabled="disabled">
+                            <img src="img/next.gif" alt="Next Image">
+                        </button>
+                    </p>
+                    <h3><span id="caption">Ava de Luca</span></h3>
+                    <p><img src="img/avanormal.png" alt="" id="image" width="115"></p>
+                </section>
+                <!-- Column 2: Description-->
+                <div class="col-lg-5 col-md-7 col-sm-12">
+                    <h2>Biographies</h2>
                     <h3 id="ava">Ava de Luca</h3>
-                    <p>Information coming soon. Preliminary picture follow.</p>
-                    <picture>
-                        <source media="(min-width: 1000px)" srcset="img/avacontra.jpg" alt="Ava in her Contra attire">
-                        <source media="(min-width: 600px)" srcset="img/avanormal.png" alt="Ava in her normal world attire">
-                        <img src="img/avaface.png" alt="Portrait of Ava" style="width:auto;">
-                    </picture><br>
-                    <h3 id="marina">Marina Hayes</h3>
-                    <p>Information coming soon. Preliminary picture follow.</p>
-                    <picture>
-                        <source media="(min-width: 1000px)" srcset="img/marinacontra.png" alt="Marina in her Contra attire">
-                        <source media="(min-width: 600px)" srcset="img/marinanormal.png" alt="Marina in her normal world attire">
-                        <img src="img/marinaface.png" alt="Portrait of Marina" style="width:auto;">
-                    </picture><br>
-                </div>
-                <!-- Column 2 -->
-                <div class="col-md">
-                    <h2>Miodrend Citizens</h2>
-                    <p>The following people were born in Miodrend in various countries.</p>
+                    <p>Information coming soon.</p>
                     <h3 id="cecille">Cecille of House Everoi</h3>
                     <p>Information coming soon.</p>
                     <h3 id="cole">Cole Grimsbane</h3>
                     <p>Information coming soon.</p>
                     <h3 id="cyrus">Cyrus of House Everoi</h3>
+                    <p>Information coming soon.</p>
+                    <h3 id="marina">Marina Hayes</h3>
                     <p>Information coming soon.</p>
                     <h3 id="philip">Philip Rivers</h3>
                     <p>Information coming soon.</p>
@@ -142,8 +150,8 @@
                     <h3 id="thaddeus">Thaddeus Grimsbane</h3>
                     <p>Information coming soon.</p>
                 </div>
-                <!-- Column 3 -->
-                <div class="col-md">
+                <!-- Column 3: Video-->
+                <div class="col-lg-2 col-md-12 col-sm-12">
                     <h3>In the meantime...</h3>
                     <p>We are working quickly to bring you more information on Miodrend. In the meantime please enjoy this video.</p>
                     <iframe src="https://www.youtube.com/embed/HAbdnCwJs1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

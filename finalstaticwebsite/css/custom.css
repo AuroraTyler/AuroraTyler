@@ -1,3 +1,76 @@
+/* Color Palette */
+/*Hex*/
+/* JQuery Styles */
+#image_list li {
+  display: inline;
+}
 
+#image_list a {
+  border: none;
+}
+
+/* Other Styles */
+html {
+  background: #d2b58c url(/img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+  background: #d2b58c url(/img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+.row {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav {
+  background: #a71d31;
+}
+
+nav a {
+  color: white;
+}
+
+nav li:hover, nav li:focus {
+  background: #ffcb35;
+  color: #000;
+}
+
+.jumbotron {
+  background: #420039 url(/img/headerbg.png) no-repeat center center fixed;
+}
+
+/* FOOTER */
+footer {
+  flex-shrink: 0;
+  background-color: #420039;
+  text-align: center;
+  height: 10vh;
+  border-top: 5px solid #a71d31;
+  margin-top: 5px;
+}
+
+footer small {
+  color: white;
+}
+
+p {
+  font-family: "Raleway", "Lato", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Eagle Lake", serif;
+  margin: 5px;
+}
 
 /*# sourceMappingURL=custom.css.map */
