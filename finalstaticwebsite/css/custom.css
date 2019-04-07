@@ -11,7 +11,7 @@
 
 /* Other Styles */
 html {
-  background: #d2b58c url(/img/bg.jpg) no-repeat center center fixed;
+  background: #d2b58c url("../img/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ html {
 
 body {
   padding-top: 50px;
-  background: #d2b58c url(/img/bg.jpg) no-repeat center center fixed;
+  background: #d2b58c url("../img/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,7 +47,7 @@ nav li:hover, nav li:focus {
 }
 
 .jumbotron {
-  background: #420039 url(/img/headerbg.png) no-repeat center center fixed;
+  background: #420039 url("../img/headerbg.png");
 }
 
 /* FOOTER */
